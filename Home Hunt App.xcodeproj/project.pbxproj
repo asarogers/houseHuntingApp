@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6F6FC4992FB840AF00AF2BFA /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 6F6FC4982FB840AF00AF2BFA /* GoogleSignIn */; };
+		6F6FC49B2FB840AF00AF2BFA /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6F6FC49A2FB840AF00AF2BFA /* GoogleSignInSwift */; };
+		6F6FC49E2FB840E800AF2BFA /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6F6FC49D2FB840E800AF2BFA /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		6F6FC40B2FB83BB100AF2BFA /* Home Hunt App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Home Hunt App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +29,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F6FC49E2FB840E800AF2BFA /* Supabase in Frameworks */,
+				6F6FC49B2FB840AF00AF2BFA /* GoogleSignInSwift in Frameworks */,
+				6F6FC4992FB840AF00AF2BFA /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +42,7 @@
 			isa = PBXGroup;
 			children = (
 				6F6FC40D2FB83BB100AF2BFA /* Home Hunt App */,
+				6F6FC49C2FB840E800AF2BFA /* Frameworks */,
 				6F6FC40C2FB83BB100AF2BFA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +53,13 @@
 				6F6FC40B2FB83BB100AF2BFA /* Home Hunt App.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6F6FC49C2FB840E800AF2BFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,6 +82,9 @@
 			);
 			name = "Home Hunt App";
 			packageProductDependencies = (
+				6F6FC4982FB840AF00AF2BFA /* GoogleSignIn */,
+				6F6FC49A2FB840AF00AF2BFA /* GoogleSignInSwift */,
+				6F6FC49D2FB840E800AF2BFA /* Supabase */,
 			);
 			productName = "Home Hunt App";
 			productReference = 6F6FC40B2FB83BB100AF2BFA /* Home Hunt App.app */;
@@ -94,6 +114,10 @@
 			);
 			mainGroup = 6F6FC4022FB83BB100AF2BFA;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6F6FC4942FB8407800AF2BFA /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				6F6FC4972FB840AF00AF2BFA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6F6FC40C2FB83BB100AF2BFA /* Products */;
 			projectDirPath = "";
@@ -255,18 +279,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LM938NCW5C;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.atlas.HomeHunt.Home-Hunt-App";
+				PRODUCT_BUNDLE_IDENTIFIER = com.atlas.HomeHunt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -274,7 +294,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -287,18 +307,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LM938NCW5C;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.atlas.HomeHunt.Home-Hunt-App";
+				PRODUCT_BUNDLE_IDENTIFIER = com.atlas.HomeHunt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -306,7 +322,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -332,6 +348,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6F6FC4942FB8407800AF2BFA /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+		6F6FC4972FB840AF00AF2BFA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6F6FC4982FB840AF00AF2BFA /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F6FC4972FB840AF00AF2BFA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		6F6FC49A2FB840AF00AF2BFA /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F6FC4972FB840AF00AF2BFA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		6F6FC49D2FB840E800AF2BFA /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F6FC4942FB8407800AF2BFA /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6F6FC4032FB83BB100AF2BFA /* Project object */;
 }
